@@ -1,0 +1,7 @@
+s1(20Feb2019:21:51:37):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_multiple_outstanding_address_test 
+s2(20Feb2019:22:28:30):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_random_wr_rd_wstrb16_test 
+s3(20Feb2019:22:30:41):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_random_wr_rd_16wstrb_test 
+s4(20Feb2019:23:58:28):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_wrapped_burst_4k_test 
+s5(21Feb2019:19:13:21):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_wrapped_burst_4k_test 
+s6(21Feb2019:19:13:34):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_random_wr_rd_16wstrb_test 
+s7(21Feb2019:19:19:12):  irun -access +rwc -f compile_list.f -uvmhome CDNS-1.1d +UVM_TESTNAME=axi_multiple_outstanding_address_test 

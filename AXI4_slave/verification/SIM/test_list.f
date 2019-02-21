@@ -1,0 +1,10 @@
+axi_reset_test 1
+axi_handshake_test 1
+axi_write_test 1
+axi_read_test 1
+axi_random_wr_rd_test 1
+axi_concurrent_test 1
+axi_fixed_burst_test 1
+axi_increment_burst_test 1
+axi_wrapped_burst_test 1
+axi_multiple_outstanding_address_test 1

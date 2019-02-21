@@ -1,0 +1,433 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 21, 2019 at 19:19:12 IST
+irun
+	-access +rwc
+	-f compile_list.f
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/1.AXI4_Slave_Write_Address.sv
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/2.AXI4_Slave_Write_Data.sv
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/3.AXI4_Slave_Write_Response.sv
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/4.AXI4_Slave_Read_Address.sv
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/5.AXI4_Slave_Read_Data.sv
+		./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/axi4_Slave_top.sv
+		./../UVME/uvm_pkg/test_pkg.sv
+		./../UVME/top/axi_top.sv
+		./../UVME/top/axi_interface.sv
+	-uvmhome CDNS-1.1d
+	+UVM_TESTNAME=axi_multiple_outstanding_address_test
+Recompiling... reason: file '/home/vv2trainee39/Desktop/Prajwal/AXI4_slave/axi_top_rtl/AXI4_SLAVE_WITH_TOP/1.AXI4_Slave_Write_Address.sv' is newer than expected.
+	expected: Wed Feb 20 21:51:10 2019
+	actual:   Thu Feb 21 19:17:52 2019
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/1.AXI4_Slave_Write_Address.sv
+	module worklib.axi4_slave_write_address:sv
+		errors: 0, warnings: 0
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/2.AXI4_Slave_Write_Data.sv
+	module worklib.axi4_slave_data_channel:sv
+		errors: 0, warnings: 0
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/3.AXI4_Slave_Write_Response.sv
+	module worklib.axi4_slave_write_response:sv
+		errors: 0, warnings: 0
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/4.AXI4_Slave_Read_Address.sv
+	module worklib.axi4_slave_read_address:sv
+		errors: 0, warnings: 0
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/5.AXI4_Slave_Read_Data.sv
+	module worklib.axi4_slave_read_data:sv
+		errors: 0, warnings: 0
+file: ./../../axi_top_rtl/AXI4_SLAVE_WITH_TOP/axi4_Slave_top.sv
+	module worklib.axi4_slave_top:sv
+		errors: 0, warnings: 0
+file: ./../UVME/uvm_pkg/test_pkg.sv
+	package worklib.test_pkg:sv
+		errors: 0, warnings: 0
+file: ./../UVME/top/axi_top.sv
+	module worklib.axi_top:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		test_pkg
+		axi_top
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.axi4_slave_data_channel:sv <0x5466f5f7>
+			streams:  22, words: 10119
+		worklib.axi4_slave_read_address:sv <0x2ff9f9a6>
+			streams:   8, words:  3844
+		worklib.axi4_slave_read_data:sv <0x4d6300b4>
+			streams:  23, words: 10685
+		worklib.axi4_slave_top:sv <0x3a989350>
+			streams:  51, words: 15522
+		worklib.axi4_slave_write_address:sv <0x7ad60cd0>
+			streams:  10, words:  5193
+		worklib.axi4_slave_write_response:sv <0x1f5a412e>
+			streams:  11, words:  3301
+		worklib.axi_top:sv <0x1ed381f3>
+			streams: 103, words: 143844
+		worklib.test_pkg:sv <0x25f12f7e>
+			streams:   0, words:     0
+		worklib.test_pkg:sv <0x3be95aef>
+			streams:  44, words: 190627
+		worklib.test_pkg:sv <0x7ad205b7>
+			streams:  25, words: 30585
+		worklib.uvm_pkg:sv <0x01dee883>
+			streams:  26, words: 51792
+		worklib.uvm_pkg:sv <0x038adc05>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x0e105a81>
+			streams:  24, words: 34238
+		worklib.uvm_pkg:sv <0x109bf882>
+			streams:  45, words: 34194
+		worklib.uvm_pkg:sv <0x14881a76>
+			streams:  26, words: 45460
+		worklib.uvm_pkg:sv <0x19020949>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x1b35d165>
+			streams:  24, words: 203567
+		worklib.uvm_pkg:sv <0x1bb23b47>
+			streams:  26, words: 57776
+		worklib.uvm_pkg:sv <0x20d8bfda>
+			streams:  24, words: 39119
+		worklib.uvm_pkg:sv <0x2415afbf>
+			streams: 311, words: 501863
+		worklib.uvm_pkg:sv <0x2d2861c4>
+			streams:  26, words: 51926
+		worklib.uvm_pkg:sv <0x2ec0af6b>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x31ed8062>
+			streams:  24, words: 32045
+		worklib.uvm_pkg:sv <0x33729370>
+			streams:  26, words: 51926
+		worklib.uvm_pkg:sv <0x3434439c>
+			streams:  26, words: 58004
+		worklib.uvm_pkg:sv <0x348a9545>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x35aa83a4>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x3c1bcfd1>
+			streams:  24, words: 63552
+		worklib.uvm_pkg:sv <0x401ac226>
+			streams:  26, words: 65126
+		worklib.uvm_pkg:sv <0x4a4e2238>
+			streams:  26, words: 50140
+		worklib.uvm_pkg:sv <0x582279ea>
+			streams:  26, words: 58004
+		worklib.uvm_pkg:sv <0x5cc49367>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x6054c115>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x609d956b>
+			streams:  52, words: 108376
+		worklib.uvm_pkg:sv <0x677deb10>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x67861aab>
+			streams:  35, words: 43826
+		worklib.uvm_pkg:sv <0x6f68b0cc>
+			streams:  26, words: 57776
+		worklib.uvm_pkg:sv <0x7056f49e>
+			streams:  26, words: 58004
+		worklib.uvm_pkg:sv <0x710a744a>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x74d58be9>
+			streams:  24, words: 39857
+		worklib.uvm_pkg:sv <0x7a3cb5cb>
+			streams:  24, words: 35945
+		worklib.uvm_pkg:sv <0x7d69b441>
+			streams:  24, words: 39119
+		worklib.uvm_pkg:sv <0x7e23e4ef>
+			streams:  26, words: 57776
+		worklib.uvm_pkg:sv <0x7fa49b13>
+			streams:  26, words: 58004
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       7       7
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 15370   11024
+		Scalar wires:                 52       -
+		Vectored wires:               90       -
+		Named events:                  4      12
+		Always blocks:                20      20
+		Initial blocks:              367     185
+		Clocking blocks:               1       1
+		Clocking items:               30      30
+		Parallel blocks:              26      27
+		Cont. assignments:            21      21
+		Pseudo assignments:           78      78
+		Assertions:                    2       2
+		Covergroup Instances:          0       2
+		SV Class declarations:       228     341
+		SV Class specializations:    438     438
+	Writing initial simulation snapshot: worklib.axi_top:sv
+Loading snapshot worklib.axi_top:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> source /tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (15.20-s051)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO ./../UVME/test/axi_base_test.sv(13) @ 0: uvm_test_top [axi_multiple_outstanding_address_test] Inside Constuctor!
+UVM_INFO @ 0: reporter [RNTST] Running test axi_multiple_outstanding_address_test...
+UVM_INFO ./../UVME/env/axi_env.sv(14) @ 0: uvm_test_top.env_inst [env_class] Inside constructor!
+UVM_INFO ./../UVME/test/axi_base_test.sv(21) @ 0: uvm_test_top [axi_multiple_outstanding_address_test] Inside Build Phase!
+UVM_INFO ./../UVME/agent/axi_agent.sv(12) @ 0: uvm_test_top.env_inst.agent_inst [agent_class] Inside constructor!
+UVM_INFO ./../UVME/env/axi_env.sv(25) @ 0: uvm_test_top.env_inst [env_class] Inside Build Phase!
+UVM_INFO ./../UVME/agent/axi_driver.sv(14) @ 0: uvm_test_top.env_inst.agent_inst.driver_inst [Driver_class] Inside Constructor!
+UVM_INFO ./../UVME/agent/axi_seqr.sv(9) @ 0: uvm_test_top.env_inst.agent_inst.seqr_inst [Sequencer_class] Inside Constructor!
+UVM_INFO ./../UVME/agent/axi_agent.sv(21) @ 0: uvm_test_top.env_inst.agent_inst [agent_class] Inside Build Phase!
+UVM_INFO ./../UVME/agent/axi_driver.sv(27) @ 0: uvm_test_top.env_inst.agent_inst.driver_inst [Driver_class] Inside Build Phase!
+UVM_INFO ./../UVME/agent/axi_agent.sv(28) @ 0: uvm_test_top.env_inst.agent_inst [agent_class] Inside Connect Phase!
+UVM_INFO ./../UVME/env/axi_env.sv(36) @ 0: uvm_test_top.env_inst [env_class] Inside connect Phase!
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------------
+Name                       Type                                   Size  Value
+-----------------------------------------------------------------------------
+uvm_test_top               axi_multiple_outstanding_address_test  -     @2758
+  env_inst                 axi_env                                -     @2841
+    agent_inst             axi_agent                              -     @2925
+      driver_inst          axi_driver                             -     @3048
+        rsp_port           uvm_analysis_port                      -     @3148
+        seq_item_port      uvm_seq_item_pull_port                 -     @3097
+      mon_inst             axi_monitor                            -     @3182
+        handshake_port     uvm_analysis_port                      -     @3329
+        rd_analysis_port   uvm_analysis_port                      -     @3280
+        wr_analysis_port   uvm_analysis_port                      -     @3231
+      seqr_inst            axi_seqr                               -     @3309
+        rsp_export         uvm_analysis_export                    -     @3417
+        seq_item_export    uvm_seq_item_pull_imp                  -     @3965
+        arbitration_queue  array                                  0     -    
+        lock_queue         array                                  0     -    
+        num_last_reqs      integral                               32    'd1  
+        num_last_rsps      integral                               32    'd1  
+    cov_model              axi_cov_model                          -     @2959
+      analysis_imp         uvm_analysis_imp                       -     @3008
+    sb                     axi_scoreboard                         -     @2890
+      rd_analysis_port     uvm_analysis_port                      -     @4217
+      rd_export            uvm_analysis_imp_rd                    -     @4119
+      wr_analysis_port     uvm_analysis_port                      -     @4168
+      wr_export            uvm_analysis_imp_wr                    -     @4070
+-----------------------------------------------------------------------------
+
+UVM_INFO ./../UVME/test/axi_multiple_outstanding_address_test.sv(20) @ 0: uvm_test_top [uvm_test_top] it test increment_burst first line
+UVM_INFO ./../UVME/test/axi_multiple_outstanding_address_test.sv(23) @ 0: uvm_test_top [axi_multiple_outstanding_address_test] inside the increment_burst test
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(33) @ 0: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [axi_multiple_outstanding_address_seq] wrapped_burst_seq: inside body
+UVM_INFO ./../UVME/test/axi_multiple_outstanding_address_test.sv(29) @ 5: uvm_test_top [axi_multiple_outstanding_address_test] increment_burst scenario 26 is competed
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(33) @ 5: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [axi_multiple_outstanding_address_seq] wrapped_burst_seq: inside body
+UVM_INFO ./../UVME/agent/axi_driver.sv(101) @ 45: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DRIVER] AWREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 55: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=0
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 55: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 65: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 65: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(379) @ 65: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Address: AWADDR=0xcc2a23b1	 AWID=0xe	 AWLEN=5	 AWSIZE=2	 AWBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(383) @ 65: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Data:	 WDATA=0x'{'h3dcfcd73}	 WSTRB=0xf	 WLAST=0
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(387) @ 65: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Response:	 BID=0xe	 BRESP=0x0
+
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 75: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 75: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 85: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 85: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 95: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 95: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 105: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 105: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 115: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 115: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(86) @ 125: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Running scenario = 27
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(95) @ 125: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Randomized AWADDR = 0x'{'hcc2a23b1, 'h0, 'h0, 'h0}
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(96) @ 125: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 0
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(104) @ 125: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] AWADDR = 0xcc2a23b1
+UVM_INFO ./../UVME/agent/axi_driver.sv(101) @ 165: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DRIVER] AWREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 175: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=0
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 175: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 185: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 185: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(379) @ 185: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Address: AWADDR=0x2eb6d10a	 AWID=0x8	 AWLEN=5	 AWSIZE=2	 AWBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(383) @ 185: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Data:	 WDATA=0x'{'h58b1630b}	 WSTRB=0xf	 WLAST=0
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(387) @ 185: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Response:	 BID=0x8	 BRESP=0x0
+
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 195: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 195: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 205: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 205: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 215: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 215: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 225: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 225: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 235: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 235: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(86) @ 245: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Running scenario = 27
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(95) @ 245: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Randomized AWADDR = 0x'{'hcc2a23b1, 'h2eb6d10a, 'h0, 'h0}
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(96) @ 245: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(99) @ 245: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] rand_wr_addr[0] = 0xcc2a23b1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(104) @ 245: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] AWADDR = 0x2eb6d10a
+UVM_INFO ./../UVME/agent/axi_driver.sv(101) @ 285: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DRIVER] AWREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 295: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=0
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 295: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 305: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 305: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(379) @ 305: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Address: AWADDR=0x67bae7e0	 AWID=0x4	 AWLEN=5	 AWSIZE=2	 AWBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(383) @ 305: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Data:	 WDATA=0x'{'hd4dac958}	 WSTRB=0xf	 WLAST=0
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(387) @ 305: uvm_test_top.env_inst.sb [SCOREBOARD] 
+WRITE Response:	 BID=0x4	 BRESP=0x0
+
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 315: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 315: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 325: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 325: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 335: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 335: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 345: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 345: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(130) @ 355: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA6] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/agent/axi_driver.sv(132) @ 355: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_WRITE_DATA7] AWREADY=0 WREADY=1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(86) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Running scenario = 27
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(95) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] Randomized AWADDR = 0x'{'hcc2a23b1, 'h2eb6d10a, 'h67bae7e0, 'h0}
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(96) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 2
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(99) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] rand_wr_addr[0] = 0xcc2a23b1
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(99) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] rand_wr_addr[1] = 0x2eb6d10a
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(104) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [SEQ] AWADDR = 0x67bae7e0
+UVM_INFO ./../UVME/test/axi_multiple_outstanding_address_test.sv(35) @ 365: uvm_test_top [axi_multiple_outstanding_address_test] increment_burst scenario 27 is competed
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(33) @ 365: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [axi_multiple_outstanding_address_seq] wrapped_burst_seq: inside body
+UVM_INFO ./../UVME/agent/axi_driver.sv(192) @ 395: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_READ_DRIVER] ARREADY=1
+UVM_WARNING ./../UVME/env/axi_scoreboard.sv(419) @ 405: uvm_test_top.env_inst.sb [SCOREBOARD] RDATA is a fixed array but ARLEN=5 indicates multiple beats expected
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(426) @ 405: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Address: ARADDR=0xcc2a23b1	 ARID=0xe	 ARLEN=5	 ARSIZE=2	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(430) @ 405: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Data: RDATA=0x3dcfcd73	 RRESP=0x0	 RLAST=0x0
+
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(145) @ 525: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 0
+UVM_INFO ./../UVME/agent/axi_driver.sv(192) @ 555: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_READ_DRIVER] ARREADY=1
+UVM_WARNING ./../UVME/env/axi_scoreboard.sv(419) @ 565: uvm_test_top.env_inst.sb [SCOREBOARD] RDATA is a fixed array but ARLEN=5 indicates multiple beats expected
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(426) @ 565: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Address: ARADDR=0x2eb6d10a	 ARID=0x8	 ARLEN=5	 ARSIZE=2	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(430) @ 565: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Data: RDATA=0x58b1630b	 RRESP=0x0	 RLAST=0x0
+
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(145) @ 685: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 1
+UVM_INFO ./../UVME/agent/axi_driver.sv(192) @ 715: uvm_test_top.env_inst.agent_inst.driver_inst [AXI_READ_DRIVER] ARREADY=1
+UVM_WARNING ./../UVME/env/axi_scoreboard.sv(419) @ 725: uvm_test_top.env_inst.sb [SCOREBOARD] RDATA is a fixed array but ARLEN=5 indicates multiple beats expected
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(426) @ 725: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Address: ARADDR=0x67bae7e0	 ARID=0x4	 ARLEN=5	 ARSIZE=2	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(430) @ 725: uvm_test_top.env_inst.sb [SCOREBOARD] 
+READ Data: RDATA=0xd4dac958	 RRESP=0x0	 RLAST=0x0
+
+UVM_INFO ./../UVME/sequence/axi_multiple_outstanding_address_seq.sv(145) @ 845: uvm_test_top.env_inst.agent_inst.seqr_inst@@multiple_outstanding_address_inst [i] i value = 2
+UVM_INFO ./../UVME/test/axi_multiple_outstanding_address_test.sv(43) @ 845: uvm_test_top [axi_multiple_outstanding_address_test] increment_burst scenario 28 is competed
+UVM_INFO /tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 1845: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(587) @ 1845: uvm_test_top.env_inst.sb [HANDSHAKE_CHECK] Checking 3 write transactions
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(642) @ 1845: uvm_test_top.env_inst.sb [HANDSHAKE_CHECK] Checking 3 read transactions
+UVM_WARNING ./../UVME/env/axi_scoreboard.sv(681) @ 1845: uvm_test_top.env_inst.sb [HANDSHAKE_CHECK] No active handshakes detected - check if monitor is capturing valid handshake attempts
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(465) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWADDR=0xcc2a23b1	 ARADDR=0xcc2a23b1	 AWID=0xe	 ARID=0xe
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(475) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWLEN=5	 ARLEN=5	 AWSIZE=2	 ARSIZE=2	 AWBURST=1	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(529) @ 1845: uvm_test_top.env_inst.sb [CHECKER - W/R_CHANNEL] WRITE/READ DATA MATCH: PASS
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(549) @ 1845: uvm_test_top.env_inst.sb [CHECKER - B_CHANNEL] Note: BVALID or BREADY not asserted during response, skipping check
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(564) @ 1845: uvm_test_top.env_inst.sb [CHECKER - R_CHANNEL] Note: RVALID, RREADY, or RLAST not asserted, skipping check
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(465) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWADDR=0x2eb6d10a	 ARADDR=0x2eb6d10a	 AWID=0x8	 ARID=0x8
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(475) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWLEN=5	 ARLEN=5	 AWSIZE=2	 ARSIZE=2	 AWBURST=1	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(529) @ 1845: uvm_test_top.env_inst.sb [CHECKER - W/R_CHANNEL] WRITE/READ DATA MATCH: PASS
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(549) @ 1845: uvm_test_top.env_inst.sb [CHECKER - B_CHANNEL] Note: BVALID or BREADY not asserted during response, skipping check
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(564) @ 1845: uvm_test_top.env_inst.sb [CHECKER - R_CHANNEL] Note: RVALID, RREADY, or RLAST not asserted, skipping check
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(465) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWADDR=0x67bae7e0	 ARADDR=0x67bae7e0	 AWID=0x4	 ARID=0x4
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(475) @ 1845: uvm_test_top.env_inst.sb [CHECKER - AW/AR_CHANNEL] 
+PASS: AWLEN=5	 ARLEN=5	 AWSIZE=2	 ARSIZE=2	 AWBURST=1	 ARBURST=1
+
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(529) @ 1845: uvm_test_top.env_inst.sb [CHECKER - W/R_CHANNEL] WRITE/READ DATA MATCH: PASS
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(549) @ 1845: uvm_test_top.env_inst.sb [CHECKER - B_CHANNEL] Note: BVALID or BREADY not asserted during response, skipping check
+UVM_INFO ./../UVME/env/axi_scoreboard.sv(564) @ 1845: uvm_test_top.env_inst.sb [CHECKER - R_CHANNEL] Note: RVALID, RREADY, or RLAST not asserted, skipping check
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  120
+UVM_WARNING :    4
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[AXI_READ_DRIVER]     3
+[AXI_WRITE_DATA6]    21
+[AXI_WRITE_DATA7]    21
+[AXI_WRITE_DRIVER]     3
+[CHECKER - AW/AR_CHANNEL]     6
+[CHECKER - B_CHANNEL]     3
+[CHECKER - R_CHANNEL]     3
+[CHECKER - W/R_CHANNEL]     3
+[Driver_class]     2
+[HANDSHAKE_CHECK]     3
+[RNTST]     1
+[SCOREBOARD]    18
+[SEQ]    12
+[Sequencer_class]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[agent_class]     3
+[axi_multiple_outstanding_address_seq]     3
+[axi_multiple_outstanding_address_test]     6
+[env_class]     3
+[i]     6
+[uvm_test_top]     1
+Simulation complete via $finish(1) at time 1845 NS + 45
+/tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 21, 2019 at 19:19:17 IST  (total: 00:00:05)
